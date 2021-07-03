@@ -3,6 +3,8 @@ import cv2
 import matplotlib as plt
 
 img = cv2.imread('1.jpg')
+(h, w, d) = img.shape
+print("width={}, height={}, depth={}".format(w, h, d))
 scale_percent = 120 # percent of original size
 width = int(img.shape[1] * scale_percent / 100)
 height = int(img.shape[0] * scale_percent / 100)
